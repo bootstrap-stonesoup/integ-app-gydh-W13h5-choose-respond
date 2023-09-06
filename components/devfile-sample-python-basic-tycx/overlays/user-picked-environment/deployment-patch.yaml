@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tycx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-gydh/devfile-sample-python-basic-tycx@sha256:d88d38aa82e0fc32246ce48a159a39746a8cd8b810137f636d25e37b390604b3
+        name: my-python
+        resources: {}
+status: {}
